@@ -1,0 +1,30 @@
+.blocline{
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    color: #1a1d20;
+    background:  #ebf0f4;
+
+
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+section{
+
+    border: 0px solid crimson;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
+}
+
+.hidediv{
+    display: none;
+
+}
+
+.HanyBody{
+    min-height: 1000px;
+
+}
