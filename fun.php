@@ -1,6 +1,39 @@
 <?php
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 #|||||||||||||||||||||||||||||||||||||| #     Print_blocline
+function Print_blocline_View($id,$text,$formId=null,$flag=null,$fileName=null){
+    global $PageId ;
+
+
+    $defId = 'def_'.$id;
+    $lineId = 'line_'.$id;
+
+    $newText = $text ;
+
+    if(isset($_SESSION[$PageId][$fileName])){
+        $newText = $text . $_SESSION[$PageId][$formId];
+        if($_SESSION[$PageId][$fileName] != null){
+            $newText .= $_SESSION[$PageId][$fileName].'_'.$flag;
+        }else{
+            $newText .= $flag;
+        }
+
+    }
+
+
+
+
+    $viewType = 'hidden'; #text / hidden
+    echo '<p class="blocline">';
+    echo '<span class="'.$lineId.'">'.$newText.'</span>';
+    echo '<input type="'.$viewType.'" value="'.$newText.'" id="'.$lineId.'">';
+    echo '<input type="'.$viewType.'" value="'.$text.'" id="'.$defId.'">';
+    echo '<a href="#" class="float-end copyThisText"  thisid="'.$lineId.'" ><i class="fa-sharp fa-regular fa-copy"></i></a>';
+    echo '</p>';
+}
+
+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+#|||||||||||||||||||||||||||||||||||||| #     Print_blocline
 function Print_blocline($id,$text,$formId=null,$flag=null){
     global $PageId ;
 

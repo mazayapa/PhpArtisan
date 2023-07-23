@@ -8,9 +8,14 @@
         <nav id="navbar" class="navbar">
             <ul>
 
+                <li><a class="nav-link scrollto" href="Page_NewProject.php">New Project</a></li>
+                <li><a class="nav-link scrollto" href="Page_FullPage.php">Full Page</a></li>
                 <li><a class="nav-link scrollto" href="Page_Upload.php">Upload</a></li>
                 <li><a class="nav-link scrollto" href="Page_Component.php">Component</a></li>
                 <li><a class="nav-link scrollto" href="Page_Model.php">Model</a></li>
+                <li><a class="nav-link scrollto" href="Page_Migrate.php">Migrate</a></li>
+                <li><a class="nav-link scrollto" href="Page_OnlyController.php">Only Controller</a></li>
+
 <!--
                 <li class="dropdown"><a href="#"><span>Home</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
