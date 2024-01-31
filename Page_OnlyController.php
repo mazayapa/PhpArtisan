@@ -27,6 +27,8 @@ echo '<div class="col-lg-12">';
 Print_blocline('1',"php artisan make:model ",'form_1'," -m");
 Print_blocline('3',"php artisan make:seeder ",'form_1',"Seeder");
 Print_blocline('2',"php artisan make:controller ",'form_1','Controller');
+Print_blocline('9',"php artisan make:controller ",'form_1','Controller --type=admin');
+Print_blocline('10',"php artisan make:controller ",'form_1','Controller --type=adminlight');
 Print_blocline('4',"php artisan make:request ",'form_1','Request');
 Print_blocline_View('5',"php artisan make:view ",'form_2','index','form_3');
 Print_blocline_View('6',"php artisan make:view ",'form_2','form','form_3');

@@ -11,19 +11,23 @@ $PageId ="NewProjectPage";
 
 
 
-formOpen($PageId,"New Project");
-PrintFiled('1',"Project Name");
-PrintFiled('2',"folde name");
-formClosed($PageId);
+//formOpen($PageId,"New Project");
+//PrintFiled('1',"Project Name");
+//PrintFiled('2',"folde name");
+//formClosed($PageId);
 
 
 
 
 echo '<section id="blog" class="blog"><div class="container" data-aos="fade-up"><div class="row">';
 echo '<div class="col-lg-12">';
-Print_blocline('1',"composer create-project laravel/laravel ",'form_1');
-Print_blocline('2',"cd ",'form_1');
-Print_blocline('3',"composer dump-autoload  ",'form_1');
+Print_blocline('1',"php artisan optimize:clear ",'');
+Print_blocline('2',"php artisan cache:clear ",'');
+Print_blocline('3',"php artisan route:cache ",'');
+Print_blocline('4',"php artisan config:cache ",'');
+Print_blocline('5',"php artisan view:clear ",'');
+Print_blocline('6',"php artisan debugbar:clear ",'');
+
 
 echo '</div>';
 echo '</div></div></section>';
