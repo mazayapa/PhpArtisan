@@ -15,6 +15,8 @@
                 <li><a class="nav-link scrollto" href="Page_Model.php">Model</a></li>
                 <li><a class="nav-link scrollto" href="Page_Migrate.php">Migrate</a></li>
                 <li><a class="nav-link scrollto" href="Page_OnlyController.php">Only Controller</a></li>
+                <li><a class="nav-link scrollto" href="Page_ClearCash.php">Clear</a></li>
+                <li><a class="nav-link scrollto" href="Page_livewire.php">Livewire</a></li>
 
 <!--
                 <li class="dropdown"><a href="#"><span>Home</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>

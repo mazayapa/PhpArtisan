@@ -7,24 +7,29 @@ echo '<main id="main" class="HanyBody" ><div class="breadcrumbs"></div>';
 echo '<div class="container">';
 
 
-$PageId ="NewProjectPage";
+$PageId ="LivewirePage";
 
 
 
-formOpen($PageId,"New Project");
-PrintFiled('1',"Project Name");
+formOpen($PageId,"Livewire");
+PrintFiled('1',"");
 PrintFiled('2',"folde name");
 formClosed($PageId);
 
 
 
-
 echo '<section id="blog" class="blog"><div class="container" data-aos="fade-up"><div class="row">';
 echo '<div class="col-lg-12">';
-Print_blocline('1',"composer create-project laravel/laravel ",'form_1');
-Print_blocline('2',"cd ",'form_1');
-Print_blocline('3',"composer dump-autoload  ",'form_1');
-
+//Print_blocline('1',"cd public_html");
+Print_blocline('2',"php artisan make:livewire ",'form_1');
+//if(isset($_SESSION['uploadPage'])){
+//    Print_blocline('7',"git clone ",'form_1'," ".$_SESSION['uploadPage']['form_2']);
+//}
+//
+//Print_blocline('3',"cd ",'form_2');
+//Print_blocline('4',"composer install");
+//Print_blocline('5',"php artisan key:generate");
+//Print_blocline('6',"php artisan migrate:refresh --seed");
 echo '</div>';
 echo '</div></div></section>';
 
